@@ -2,10 +2,11 @@
 
 Author: Gamze Turan
 
-<img align="center" width="800" height="400" src='images/image_1.jpg'>
-              
-              | <b>Fig.1 Student taking part in an exam (Image Credits -  Photo by <a href="https://unsplash.com/@jeswinthomas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeswin Thomas</a>)
+| ![space-1.jpg](images/image_1.jpg) |
+|:--:|
+| <b>Fig.1 Student taking part in an exam (Image Credits -  Photo by <a href="https://unsplash.com/@jeswinthomas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeswin Thomas</a>)
   </b>|
+  
   
 ## Overview
 
