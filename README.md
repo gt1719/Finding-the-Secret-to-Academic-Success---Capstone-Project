@@ -38,15 +38,15 @@ In [Cortez and Silva, 2008](www3.dsi.uminho.pt/pcortez/student.pdf), the two dat
 
 ## Data Analysis
 
-<img align="center" width="600" height="300" src='img/final_score.jpg'>  
+<img align="center" width="600" height="300" src='images/final_score_distribution%20.png'>  
 
 The target `final_score`,  lies between 0 and 20. The average score is 11.34. There are a lot of students that score 0 in the final score. These represent students who dropped out of school.
 
-<img align="center" width="600" height="300" src='img/female_school_dropout.jpg'> 
+<img align="center" width="600" height="300" src='images/school_dropouts.jpg'> 
 
 Overall females do better than males in school, but more females drop out of high-school. Let's look at the relationship status of the females that are dropping out of school. 
 
-<img align="center" width="600" height="300" src='img/dropout_relationship.png'>
+<img align="center" width="600" height="300" src='images/Female_school_dropouts.png'>
 
 Approximately 70% of all females who left school were in a relationship. According to literature, as many as 36% of high-school dropouts can be attributed to teen pregnancy!
 
@@ -54,11 +54,11 @@ Approximately 70% of all females who left school were in a relationship. Accordi
 
 Majority students spend 2 to 5 hours of their time every week studying.
 
-<img align="center" width="600" height="300" src='img/fig1.png'>
+<img align="center" width="600" height="300" src='images/fig1.png'>
 
 I see that as study time increases, the average score of the student increases.
 
-<img align="center" width="600" height="300" src='img/studytime_vs_score.jpg'>
+<img align="center" width="600" height="300" src='images/dist_final_weekly_st.png'>
 
 ### Urban vs Rural
 
@@ -66,25 +66,25 @@ I see that as study time increases, the average score of the student increases.
 
 These boxplots indicate that students residing in urban areas tend to perform better than students residing in rural areas.
 
-<img align="center" width="600" height="300" src='img/Urban vs Rural.jpg'>
+<img align="center" width="600" height="300" src='images/dist_final_address.png'>
 
 Let's try and analyze a variety of factors that might cause this. One of them I believe is `commute_time`. 
 
 Rural students tend to have higher commute times than urban students: 
 
-<img align="center" width="600" height="300" src='img/Commute Time - Urban vs Rural.jpg'>
+<img align="center" width="600" height="300" src='images/student_address_type.png'>
 
 It is well known that students with higher commute time usually get less time to study and thus there studies suffer.(Kobus et al., 2018)
 
-<img align="center" width="600" height="300" src='img/Final Score vs Commute Time.jpg'>
+<img align="center" width="600" height="300" src='images/dist_final_commute_time.png'>
 
 Additionally, many rural students lack access to internet, more so than urban students.
 
-<img align="center" width="600" height="300" src='img/Internet Access - Urban vs Rural.jpg'>
+<img align="center" width="600" height="300" src='images/U_R_Access_to_internet.png'>
 
 Studies have shown that having access to internet improves academic performance. This is true for our dataset as well:
 
-<img align="center" width="600" height="300" src='img/Internet vs Final Score.jpg'>
+<img align="center" width="600" height="300" src='images/dist_final_access_to_internet.png'>
 
 ### Wish to go for Higher Education
 
@@ -92,7 +92,7 @@ Majority of the students in our dataset wish to opt for higher education. As a l
 
 This is the case with our dataset as well:
 
-<img align="center" width="600" height="300" src='img/desire to go for higher edu.jpg'>
+<img align="center" width="600" height="300" src='images/final_who_do_dont.png'>
 
 ### Romantic Relationship
 
@@ -100,11 +100,11 @@ High school relationships have a tendency to be volatile and can end up causing 
 
 Approximately 64% of the students in our dataset are in a relationship.
 
-<img align="center" width="600" height="300" src='img/Romantic status.jpg'>
+<img align="center" width="600" height="300" src='images/relationship_status.png'>
 
 The following boxplot indicates that single students perform better in their exams:
 
-<img align="center" width="600" height="300" src='img/Romance vs final score.jpg'>
+<img align="center" width="600" height="300" src='images/single_student_higher_final.png'>
 
 ### Parents Education
 
@@ -112,11 +112,11 @@ Many studies indicate that parent's education levels have a critical impact on a
 
 In our dataset, Mothers seem to be better educated than fathers. None represent the cases where no information is available(orphans).
 
-<img align="center" width="600" height="300" src='img/Parents education.jpg'>
+<img align="center" width="600" height="300" src='images/edu_level_father_mother.png'>
 
 It can be seen that for both the parents, having better education will lead to better academic success for the student. 
 
-<img align="center" width="600" height="300" src='img/Parent education vs final score.jpg'>
+<img align="center" width="600" height="300" src='images/dist_final_parent_edu_level.png'>
 
 ### Alcohol Consumption
 
@@ -131,11 +131,11 @@ I will see if our dataset shows similar trend. Two columns in our dataset will b
 
 It's good to see that 70% of the students drink very low alcohol on weekdays. As expected alcohol usage increases over the weekend.
 
-<img align="center" width="600" height="300" src='img/Alcohol consumption stats.jpg'>
+<img align="center" width="600" height="300" src='images/alcohol_consumption_weekday_weekend.png'>
 
 Increasing Alcohol consumption has detrimental effects on student performance. Effect is more profound in the case of weekday drinking.
 
-<img align="center" width="600" height="300" src='img/Alcohol vs grades.jpg'>
+<img align="center" width="600" height="300" src='images/dist_final_frequency_consumption.png'>
 
 ## Modeling
 
@@ -155,19 +155,19 @@ To prepare the data for machine learning, we performed several data wrangling ta
 **Feature Selection**:
 I used Random Forest to get a subset of **important** features to use for final modeling. The 16 features I receive are as follows:
 
-<img align="center" width="600" height="300" src='img/selected_features.png'>
+<img align="center" width="600" height="300" src='images/selected_features.png'>
 
-I first used a Baseline Dummy Regressor to get baseline accuracy values. The predictor was awful as expected and gave a negative R-Squared of -0.033. 
+I first used a Baseline Dummy Regressor to get baseline accuracy values. The predictor was awful as expected and gave a negative R-Squared of -0.033.While this might seem odd but R-Squared can have a negative value.In practice, this only happens when your models predictions are worse tahn consatant function that always predicts the mean of the test dataset.
 
 Following that I used many popular ML regressors and tuned the hyper-parameters of each one of them to get the best possible model for our dataset. I tested each one 5 times(5 different samples of testing set) and presented the mean accuracy metrics for all of these models. Here are the accuracy results:
 
-<img align="center" width="600" height="300" src='img/model_accuracies.jpg'>
+<img align="center" width="600" height="300" src='images/model_accuracies.jpg'>
 
 The best accuracy values that I received were for the Random Forest model with a R-Squared of 0.917. Random Forest are excellent for analysis as they are very robust models and also help provide key insights from the model. 
 
 Here are the residual plots for the same:
 
-<img align="center" width="600" height="300" src='img/random_forest_accuracy.png'>
+<img align="center" width="600" height="300" src='images/Random_forest.png'>
 
 The predicted values seem to be randomly scattered around the actual values with no distinguishable pattern. 
 
@@ -181,6 +181,9 @@ The Exploratory Data Analysis revealed many interesting ideas from the data such
 * Students living with both their parents or stable households seem to be perform better.
 * Students who wish to go for higher education perform better in school.
 * Increased commute time has a negative impact on academic performance.
+* Increasing weekly study time perform better in final score.
+* Student’s who has better internet access, perform better.
+* Alcohol consumption also has a negative impact on academic performance.
 
 These are just some of the insights that were found in the data. These ideas were than supported by the machine learning modeling stage which showed that the same features were important for predicting final score.
 
@@ -224,10 +227,6 @@ For additional info, contact Gamze Turan at ginaturan15@gmail.com
 
 ├── Finding the Secret to Academic Success - Capstone Project.ipynb
 
+├── Finding the Secret to Academic Success - Capstone Project.ipynb
+
 └── README.md
-
-
-
-
-
-
