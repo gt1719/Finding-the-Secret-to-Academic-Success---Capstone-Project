@@ -66,7 +66,7 @@ I see that as study time increases, the average score of the student increases.
 
 These boxplots indicate that students residing in urban areas tend to perform better than students residing in rural areas.
 
-<img align="center" width="300" height="600" src='images/dist_final_address.png'>
+<img align="center" width="400" height="600" src='images/dist_final_address.png'>
 
 Let's try and analyze a variety of factors that might cause this. One of them I believe is `commute_time`. 
 
@@ -84,7 +84,7 @@ Additionally, many rural students lack access to internet, more so than urban st
 
 Studies have shown that having access to internet improves academic performance. This is true for our dataset as well:
 
-<img align="center" width="300" height="600" src='images/dist_final_access_to_internet.png'>
+<img align="center" width="400" height="600" src='images/dist_final_access_to_internet.png'>
 
 ### Wish to go for Higher Education
 
@@ -92,7 +92,7 @@ Majority of the students in our dataset wish to opt for higher education. As a l
 
 This is the case with our dataset as well:
 
-<img align="center" width="300" height="600" src='images/final_who_do_dont.png'>
+<img align="center" width="400" height="600" src='images/final_who_do_dont.png'>
 
 ### Romantic Relationship
 
@@ -104,7 +104,7 @@ Approximately 64% of the students in our dataset are in a relationship.
 
 The following boxplot indicates that single students perform better in their exams:
 
-<img align="center" width="300" height="600" src='images/single_student_higher_final.png'>
+<img align="center" width="400" height="600" src='images/single_student_higher_final.png'>
 
 ### Parents Education
 
@@ -155,13 +155,13 @@ To prepare the data for machine learning, we performed several data wrangling ta
 **Feature Selection**:
 I used Random Forest to get a subset of **important** features to use for final modeling. The 16 features I receive are as follows:
 
-<img align="center" width="600" height="300" src='images/selected_features.png'>
+<img align="center" width="600" height="200" src='images/selected_features.png'>
 
 I first used a Baseline Dummy Regressor to get baseline accuracy values. The predictor was awful as expected and gave a negative R-Squared of -0.033.While this might seem odd but R-Squared can have a negative value.In practice, this only happens when your models predictions are worse tahn consatant function that always predicts the mean of the test dataset.
 
 Following that I used many popular ML regressors and tuned the hyper-parameters of each one of them to get the best possible model for our dataset. I tested each one 5 times(5 different samples of testing set) and presented the mean accuracy metrics for all of these models. Here are the accuracy results:
 
-<img align="center" width="600" height="200" src='images/model_accuracies.jpg'>
+<img align="center" width="600" height="300" src='images/model_accuracies.jpg'>
 
 The best accuracy values that I received were for the Random Forest model with a R-Squared of 0.917. Random Forest are excellent for analysis as they are very robust models and also help provide key insights from the model. 
 
