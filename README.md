@@ -44,4 +44,16 @@ This data contains student achievement information in secondary education of two
 
 In [Cortez and Silva, 2008](www3.dsi.uminho.pt/pcortez/student.pdf), the two datasets were modeled under binary/five-level classification and regression tasks.
 
+## Data Preparation
+
+Our target, the final score,  lies between 0 and 20. The average score is 11.34.
+There are a lot of students that score 0 in the final score. These represent students who dropped out of school.
+
+| ![final_score_distribution%20.png](images/final_score_distribution%20.png) |
+
+Overall females do better than males in school, but more females drop out of high-school.
+
+As many as 36% of high-school dropouts can be attributed to teen pregnancy!
+
+| ![school_dropouts.png](images/school_dropouts.png) |
 
