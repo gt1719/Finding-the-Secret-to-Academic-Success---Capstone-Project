@@ -227,6 +227,4 @@ For additional info, contact Gamze Turan at ginaturan15@gmail.com
 
 ├── Finding the Secret to Academic Success - Capstone Project.ipynb
 
-├── Finding the Secret to Academic Success - Capstone Project.ipynb
-
 └── README.md
